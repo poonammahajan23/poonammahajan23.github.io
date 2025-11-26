@@ -4,14 +4,88 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Poonam Mahajan — Portfolio</title>
-  <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:40px;color:#111}
-    a{color:royalblue}
-  </style>
+  <meta name="description" content="Portfolio of Poonam Mahajan — developer, designer, projects & contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <h1>Poonam Mahajan</h1>
-  <p>Hello — this is a placeholder portfolio. Replace this with your content.</p>
-  <p><a href="#projects">View projects</a></p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Poonam Mahajan</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h2>Hi, I'm Poonam</h2>
+        <p>Frontend developer & designer building clean, accessible web experiences. I focus on HTML, CSS, JavaScript and responsive UI.</p>
+        <p class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </p>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <!-- add an image file here if you want: assets/profile.jpg -->
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I build front-end projects and small web apps. I enjoy making pixel-perfect UIs and turning designs into accessible, performant websites.</p>
+      <ul class="skills">
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>React (optional)</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="project-grid">
+        <article class="project-card">
+          <h4>Project One</h4>
+          <p>Short description. Link to demo / repo.</p>
+          <p><a class="link" href="#">View →</a></p>
+        </article>
+
+        <article class="project-card">
+          <h4>Project Two</h4>
+          <p>Short description. Link to demo / repo.</p>
+          <p><a class="link" href="#">View →</a></p>
+        </article>
+
+        <article class="project-card">
+          <h4>Project Three</h4>
+          <p>Short description. Link to demo / repo.</p>
+          <p><a class="link" href="#">View →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>Want to collaborate or hire me? Reach out:</p>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/poonammahajan23" target="_blank" rel="noopener">github.com/poonammahajan23</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Poonam Mahajan — Built with ❤️ • <a href="https://github.com/poonammahajan23/poonammahajan23.github.io" target="_blank" rel="noopener">Source</a></small>
+    </div>
+  </footer>
+
+  <script>
+    // set year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
